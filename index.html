@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Webbdesign</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#hem" class="logo">MDweb</a>
+        <div class="nav-links">
+          <a href="#hem" class="nav-link">Hem</a>
+          <a href="#tjanster" class="nav-link">Tjänster</a>
+          <a href="#kontakt" class="nav-link">Kontakt</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hem">
+        <h1>Ge ditt företag det intryck det förtjänar</h1>
+        <p class="subtitle">– med en modern hemsida som imponerar</p>
+      </section>
+
+      <section class="intro">
+        <p>Dagens kunder bestämmer sig ofta redan innan de kliver in i din lokal – genom att först besöka din hemsida. En gammal, rörig eller tråkig design kan snabbt få kunder att tappa intresset.</p>
+        <p>Jag hjälper dig att skapa en snygg, mobilanpassad och professionell hemsida – anpassad för just din verksamhet, oavsett om du driver en restaurang, frisörsalong, butik eller något helt annat.</p>
+      </section>
+
+      <section class="services" id="tjanster">
+        <h2>Vad jag erbjuder:</h2>
+        <ul>
+          <li>Modern och stilren design som passar din bransch</li>
+          <li>Mobilvänlig layout – lika snygg på telefon som på dator</li>
+          <li>Snabba laddningstider och smidig navigering</li>
+          <li>Möjlighet att uppdatera din befintliga sida eller skapa en helt ny från grunden</li>
+        </ul>
+      </section>
+
+      <section class="benefits">
+        <h2>Varför det är viktigt:</h2>
+        <p>En professionell hemsida ger:</p>
+        <ul>
+          <li>Förtroende hos nya kunder</li>
+          <li>En bättre första upplevelse</li>
+          <li>Ökad chans att kunden bokar tid eller besöker dig direkt</li>
+        </ul>
+      </section>
+
+      <section class="unique">
+        <h2>Låt din hemsida spegla din kvalitet</h2>
+        <p>Ditt företag är unikt – din hemsida ska vara det också. Jag jobbar nära dig och ser till att resultatet matchar din vision, stil och målgrupp.</p>
+      </section>
+
+      <section class="contact" id="kontakt">
+        <h2>Redo att ta nästa steg?</h2>
+        <p>Kontakta mig så pratar vi mer om vad just du behöver – utan några förpliktelser.</p>
+        <div class="contact-info">
+          <p>Telefon: <a href="tel:073-4457860">073-445 78 60</a></p>
+          <p>E-post: <a href="mailto:kontakt@exempel.se">kontakt@exempel.se</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Modern Webbdesign. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href');
+          document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
